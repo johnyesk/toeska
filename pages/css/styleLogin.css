@@ -1,11 +1,14 @@
 /* CSS Scope */
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Changa&family=Lemonada:wght@500&display=swap');
+
 html {
     background-color: #F6F6F6;
     font-size: 12px;
 }
 
 body {
-    width:955px;
+    width:1150px;
 	border:1px solid #ddd;
 	margin:10px auto;
 	background-color:#FFF;
@@ -13,14 +16,15 @@ body {
 	border-radius:5px;
 }
 
-h2 {
+h3 {
     padding: 10px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 25px;
-    font-style: italic;
-    color: #C63;
+    font-family: 'Lemonada', cursive;
+    font-size: 18px;
+    color: rgb(24, 16, 70);
     margin: 2px 0 15px;
     text-shadow: 1px 1px 2px #666;
+    text-align: center;
+    margin-top: 40px;
 }
 
 header {
@@ -28,30 +32,66 @@ header {
     height: 95px;
 }
 
-nav {
-    width: 900px;
-    background-color: #5D240A
-}
-
 nav ul {
-    list-style: none;
-    margin:0;
-    padding: 4px;
+	margin: 0;
+	padding: 0;
+	display: flex;
 }
 
 nav ul li {
-    display: inline-block
+	list-style: none;
+	margin: 0 20px;
+	transition: 0.5s;
 }
 
 nav ul li a {
-    font-size: 0.85em;
-    text-decoration: none;
-    color: #FFF;
-    padding:4px 20px;
+	display: block;
+	position: relative;
+	text-decoration: none;
+	padding: 5px;
+	font-size: 15px;
+    font-family: 'Balsamiq Sans', cursive;
+    text-shadow: 1px 1px 2px #666;
+	color: #000000;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+nav ul:hover li a {
+	transform: scale(0.25);
+	opacity: 0.5;
+	filter: blur(1px);
 }
 
 nav ul li a:hover {
-    background-color: #B4531A
+	transform: scale(1.25);
+	opacity: 1;
+	filter: blur(0);
+}
+
+nav ul li a:before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #5510a3;
+	transition: transform 0.5s;
+	transform-origin:right;
+	transform:scaleX(0);
+	z-index: -1;
+}
+
+nav ul li a:hover:before {
+	transition: transform 0.5s;
+	transform-origin: left;
+	transform:scaleX(1);
+}
+
+form {
+    font-family: 'Changa', sans-serif;
+    margin-left: 200px;
 }
 
 input {
@@ -67,7 +107,7 @@ input:focus {
     outline:none;
 }
 
-input[type=submit] {
+button {
 	width:100px;
 	color:#FFF;
 	background:linear-gradient(top, #F33, #933 );
@@ -81,8 +121,21 @@ footer {
     clear: both;
     width:700px;
     margin: 0 auto;
-    font-size: 1em;
+    font-size: 1.25em;
     text-align: center;
-    background-color: #ececec;
+    background-color: #5510a3;
+    text-decoration-color: azure;
     padding: 5px;
+    margin-top: 100px;
+}
+
+.search {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 700px;
+}
+
+.menu {
+    text-align:right;
 }
