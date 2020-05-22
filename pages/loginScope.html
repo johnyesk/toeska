@@ -3,8 +3,68 @@
     <head>
         <title>Login Escopo</title>
         <meta charset="UTF-8" />
+        <link href="css/styleLogin.css" rel="stylesheet" />
     </head>
     <body>
-        <p>Login Escopo</p>
+        <!-- Corpo principal da pagina  -->
+        <main>
+            <header>
+                Logo
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Produtos</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contatos</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <h2>Cadastro</h2>
+            </div>
+
+            <div>
+                <form action="" method="post">
+
+                    <input type="text" name="txtName" id="txtName" size="30" maxlength="40" required placeholder="Insira seu nome" autofocus />
+                    <br />
+
+                    <label for="txtEmail">Email</label>
+                    <br />
+                    <input type="text" name="txtEmail" id="txtEmail" size="40" maxlength="40" required placeholder="Insira seu email" autofocus />
+                    <br />
+
+                    <label for="txtCpf">CPF</label>
+                    <br />
+                    <input type="text" name="txtCpf" id="txtCpf" size="20" maxlength="11" required placeholder="xxx.xxx.xxx-xx"/>
+                    <br />
+
+                    <label for="nrTelephone">Telefone</label>
+                    <br />
+                    <input type="tel" name="nrTelephone" id="nrTelephone" size="30" maxlength="30" required placeholder="() *****-****" /> 
+                    <br />
+
+                    <label for="txtPassword01">Senha</label>
+                    <br />
+                    <input type="password" name="txtPassword01" id="txtPassword01" size="30" maxlength="30" required placeholder="Insira sua senha" />
+                    <br />
+
+                    <label for="txtPassword02">Senha novamente</label>
+                    <br />
+                    <input type="password" name="txtPassword02" id="txtPassword02" size="30" maxlength="30" required placeholder="Repita  a senha" />
+                    <br />
+
+                    <button onclick="validation()" id="btnSubmit" name="btnSubmit">Enviar</button>
+
+                </form>
+            </div>
+
+            <footer>
+                <p>Products toeska - Rua não sei onde fica - São Paulo-SP</p>
+                <small>&copy; Copyright 2020 - toeska todos os direitos reservados</small>
+            </footer>
+        </main>
     </body>
+    <script lang="javascript" src="js/authenticationScope.js"></script>
 </html>

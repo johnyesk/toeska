@@ -1,0 +1,88 @@
+/* CSS Scope */
+html {
+    background-color: #F6F6F6;
+    font-size: 12px;
+}
+
+body {
+    width:955px;
+	border:1px solid #ddd;
+	margin:10px auto;
+	background-color:#FFF;
+	padding:10px 30px;
+	border-radius:5px;
+}
+
+h2 {
+    padding: 10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    color: #C63;
+    margin: 2px 0 15px;
+    text-shadow: 1px 1px 2px #666;
+}
+
+header {
+    width: 900px;
+    height: 95px;
+}
+
+nav {
+    width: 900px;
+    background-color: #5D240A
+}
+
+nav ul {
+    list-style: none;
+    margin:0;
+    padding: 4px;
+}
+
+nav ul li {
+    display: inline-block
+}
+
+nav ul li a {
+    font-size: 0.85em;
+    text-decoration: none;
+    color: #FFF;
+    padding:4px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #B4531A
+}
+
+input {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #999;
+    padding: 8px;
+    border-radius:3px;
+}
+
+input:focus {
+    border: 1px solid #ccc;
+    outline:none;
+}
+
+input[type=submit] {
+	width:100px;
+	color:#FFF;
+	background:linear-gradient(top, #F33, #933 );
+	background:-webkit-linear-gradient(top, #F33, #933 );
+	background:-moz-linear-gradient(top, #F33, #933 );
+	border:1px solid #333;
+	cursor:pointer;
+}
+
+footer {
+    clear: both;
+    width:700px;
+    margin: 0 auto;
+    font-size: 1em;
+    text-align: center;
+    background-color: #ececec;
+    padding: 5px;
+}
