@@ -1,0 +1,10 @@
+.product_cell
+{
+  align-items: center
+}
+
+.product
+{
+  width: 40%;
+  padding-right: 5%;
+}
