@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+body {
+    font-family:
+    'Roboto',
+    'Lucida Sans',
+    'Lucida Sans Regular',
+    Verdana,
+    sans-serif;
+}
+
 .topo {
     background-color: black;
-	height: 19vh;
 }
 
 #img-logo {
@@ -17,18 +25,17 @@
 }
 
 .container {
-	max-width: 100%;
-	margin: 0 auto;
+    max-width: 100%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
 }
 
 .item {
-	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
-	flex: 1;
+    flex: 1;
     margin: 5px;
-	text-align: center;
+    text-align: center;
 }
 
 .img-botoes_topo {
@@ -51,9 +58,17 @@ nav ul li a {
     text-decoration: none;
     padding: 0px;
     font-size: 15px;
-    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
     text-transform: uppercase;
     transition: 0.5s;
+}
+
+#head-link {
+    text-decoration: none;
+    color: white;
+}
+
+#head-link:hover {
+    color: #6315cb;
 }
 
 #menu-link {
@@ -61,19 +76,19 @@ nav ul li a {
     padding: 5px;
 }
 
-nav ul:hover li a {
+ul:hover li a {
     transform: scale(1.2);
     opacity: .2;
     filter: blur(1px);
 }
 
-nav ul li a:hover {
+ul li a:hover {
     transform: scale(1.4);
     opacity: 1;
     filter: blur(0);
 }
 
-nav ul li a:before {
+ul li a:before {
     content: '';
     position: absolute;
     top: 0;
@@ -87,7 +102,7 @@ nav ul li a:before {
     z-index: -1;
 }
 
-nav ul li a:hover:before {
+ul li a:hover:before {
     transition: transform 0.5s;
     transform-origin: left;
     transform: scaleX(1);
@@ -100,7 +115,14 @@ nav ul li a:hover:before {
     height: 100%;
 }
 
+article {
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid gray;
+}
+
 /* INPUT */
+
 #pequisa-box {
     background-color: rgb(255, 255, 255);
     height: 36px;
@@ -119,7 +141,9 @@ nav ul li a:hover:before {
 #botao-pesquisa_topo:hover {
     border-radius: 300px;
     background-color: rgb(44, 44, 44);
-	background: linear-gradient(0deg, rgba(216,159,58,1) 0%, rgba(99,21,203,1) 100%);	
+    background:
+    linear-gradient(0deg, rgba(216,159,58,1) 0%,
+    rgba(99,21,203,1) 100%);	
 }
 
 #barra-pesquisa_topo {
@@ -130,18 +154,9 @@ nav ul li a:hover:before {
     background-color: transparent;
     border-style: none;
     outline: none;
-    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
 }
 
 .botoes_topo {
     color: white;
     font-size: 14px;
-    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
-}
-
-#botao-login_topo {
-	
-}
-
-#botao-sacola_topo {
 }
