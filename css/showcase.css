@@ -1,10 +1,33 @@
-.product_cell
+.product-image
 {
-  align-items: center
+  width: 80%;
+}
+
+body
+{
+}
+
+.showcase {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.showcase-row
+{
+  margin-left: 15%;
+  display: flex;
 }
 
 .product
 {
+  text-align: center;
   width: 40%;
-  padding-right: 5%;
+  border: solid 1px gray;
+  margin: 5px;
+  padding: 1px;
+}
+
+.product-text {
+  text-align: left;
 }
