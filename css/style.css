@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.topo {
+    background-color: black;
+	height: 19vh;
+}
+
+#img-logo {
+    width: 300px;
+}
+
+#navegacao_topo {
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding-bottom: 16px;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.item {
+	/* O flex: 1; é necessário para que cada item se expanda ocupando o tamanho máximo do container. */
+	flex: 1;
+    margin: 5px;
+	text-align: center;
+}
+
+.img-botoes_topo {
+    width: 25px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding: 0px;
+    font-size: 15px;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+#menu-link {
+    color: white;
+    padding: 5px;
+}
+
+nav ul:hover li a {
+    transform: scale(1.2);
+    opacity: .2;
+    filter: blur(1px);
+}
+
+nav ul li a:hover {
+    transform: scale(1.4);
+    opacity: 1;
+    filter: blur(0);
+}
+
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #6315cb;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+nav ul li a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+#img-lupa {
+    margin-top: 3px;
+    margin-left: 5px;
+    width: 60%;
+    height: 100%;
+}
+
+/* INPUT */
+#pequisa-box {
+    background-color: rgb(255, 255, 255);
+    height: 36px;
+    display: flex;
+    border-radius: 300px;
+}
+
+#botao-pesquisa_topo {
+    width: 10%;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#botao-pesquisa_topo:hover {
+    border-radius: 300px;
+    background-color: rgb(44, 44, 44);
+	background: linear-gradient(0deg, rgba(216,159,58,1) 0%, rgba(99,21,203,1) 100%);	
+}
+
+#barra-pesquisa_topo {
+    font-size: 14px;
+    width: 85%;
+    margin-left: 5%;
+    color: black;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+}
+
+.botoes_topo {
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto', 'Lucida Sans', 'Lucida Sans Regular', Verdana, sans-serif;
+}
+
+#botao-login_topo {
+	
+}
+
+#botao-sacola_topo {
+}
