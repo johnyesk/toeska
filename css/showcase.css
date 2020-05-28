@@ -5,6 +5,7 @@
 
 body
 {
+  font-family: arial;
 }
 
 .showcase {
@@ -30,4 +31,7 @@ body
 
 .product-text {
   text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  float: left;
 }
