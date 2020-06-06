@@ -11,7 +11,7 @@ body {
 
 .topo {
     background-color: black;
-	height: 19vh;
+		height: 19vh;
 }
 
 #img-logo {
@@ -26,17 +26,17 @@ body {
 }
 
 .container {
-	max-width: 100%;
-	margin: 0 auto;
+		max-width: 100%;
+		margin: 0 auto;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
 }
 
 .item {
-	flex: 1;
+		flex: 1;
     margin: 5px;
-	text-align: center;
+		text-align: center;
 }
 
 .img-botoes_topo {
@@ -141,7 +141,8 @@ article {
 #botao-pesquisa_topo:hover {
     border-radius: 300px;
     background-color: rgb(44, 44, 44);
-	background: linear-gradient(0deg, rgba(216,159,58,1) 0%, rgba(99,21,203,1) 100%);	
+		background: linear-gradient(0deg, rgba(216,159,58,1) 0%,
+		rgba(99,21,203,1) 100%);	
 }
 
 #barra-pesquisa_topo {
