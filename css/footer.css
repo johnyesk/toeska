@@ -1,62 +1,46 @@
-* { 
-  margin:0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
 a {
   text-decoration: none;
-  outline: none;
 }
 
 .footer {
-  width: 100%;
-  height: auto;
-  margin: auto;
   background: black;
-  padding: 15px 5px;
-}
-
-.footer {
-  bottom: 0%;
-  position: absolute;
-  height:10.6%;
-}
-
-/*REDE SOCIAL*/
-.footer-rede-social {
+  bottom: 0px;
+  color: #fff;
+  font-family: arial;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 0px;
+  position: fixed;
+  text-align: right;
   width: 100%;
-  height: auto;
-  margin: auto;
 }
 
-.footer-rede-social ul {
-  margin: 0px;
-  padding: 0px;
+.footer-credito {
+  padding-right: 10px;
+}
+
+.footer-rede-social {
   text-align: center;
+  width: 100%;
 }
 
 .footer-rede-social ul li {
+  background: #fff;
+  border-radius: 0%;
   display: inline-block;
-  width: 50px;
   height: 50px;
   margin: 0px 15px;
-  border-radius: 0%;
-  background: #fff;
+  width: 50px;
 }
 
 .footer-rede-social ul li a {
   color: black;
+  display: block;
   font-size: 25px;
-  display: block;	
 }
 
 .footer-rede-social ul li a i {
   line-height: 50px;
-}
-
-.footer-rede-social ul li:hover {
-  background:#d89f3a;
 }
 
 .footer-rede-social ul li a:hover {
@@ -65,10 +49,6 @@ a {
 
 #facebook:hover {
   background:#3b5998;
-}
-
-#twitter:hover {
-  background:#26a7de;
 }
 
 #google:hover {
@@ -85,23 +65,10 @@ a {
   #285AEB 90%);
 }
 
+#twitter:hover {
+  background:#26a7de;
+}
+
 #youtube:hover {
   background: #e32d2d;
-}
-
-.footer-credito p {
-  font-family: arial;
-  font-size: 12px;
-  text-align: right;
-  padding-right: 10px; 
-  color: #fff;
-  font-weight: 600;
-}
-
-.footer-credito p a {
-  color: #fff;
-}
-
-.footer-credito p a:hover {
-  color: #d89f3a;
 }

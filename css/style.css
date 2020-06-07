@@ -123,7 +123,7 @@ article {
 }
 
 /* INPUT */
-#pequisa-box {
+#pesquisa-box {
   background-color: rgb(255, 255, 255);
   height: 36px;
   display: flex;
@@ -142,7 +142,7 @@ article {
   border-radius: 300px;
   background-color: rgb(44, 44, 44);
   background: linear-gradient(0deg, rgba(216,159,58,1) 0%,
-  rgba(99,21,203,1) 100%);	
+  rgba(99,21,203,1) 100%);
 }
 
 #barra-pesquisa_topo {
@@ -158,4 +158,5 @@ article {
 .botoes_topo {
   color: white;
   font-size: 14px;
+  margin-right: 10px;
 }
