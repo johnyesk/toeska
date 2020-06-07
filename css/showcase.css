@@ -1,0 +1,32 @@
+.product-image
+{
+  width: 80%;
+}
+
+.showcase {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.showcase-row
+{
+  margin-left: 15%;
+  display: flex;
+}
+
+.product
+{
+  text-align: center;
+  width: 40%;
+  border: solid 1px gray;
+  margin: 5px;
+  padding: 1px;
+}
+
+.product-text {
+  text-align: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  float: left;
+}

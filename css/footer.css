@@ -1,0 +1,98 @@
+*{
+	margin:0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	outline: none;
+
+}
+
+footer{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: black;
+	padding: 15px 5px;
+	bottom: 0%;
+}
+
+/*REDE SOCIAL*/
+.footer-rede-social{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.footer-rede-social ul{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-rede-social ul li{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 15px;
+	border-radius: 0%;
+	background: #fff;
+}
+
+.footer-rede-social ul li a{
+	color: black;
+	font-size: 25px;
+	display: block;
+}
+
+.footer-rede-social ul li a i{
+	line-height: 50px;
+}
+
+.footer-rede-social ul li:hover{
+	background:#d89f3a;
+}
+
+.footer-rede-social ul li a:hover{
+	color: white;
+}
+
+#facebook:hover {
+	background:#3b5998;
+}
+
+#twitter:hover {
+	background:#26a7de;
+}
+
+#google:hover {
+	background: #cd462f;
+}
+
+#instagram:hover {
+	background: radial-gradient(circle at 40% 110%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+#youtube:hover {
+	background: #e32d2d;
+}
+
+/*CREDITOS*/
+.footer-credito p{
+	font-family: arial;
+	font-size: 12px;
+	text-align: right;
+	padding-right: 10px; 
+	color: #fff;
+	font-weight: 600;
+}
+
+.footer-credito p a{
+	color: #fff;
+}
+
+.footer-credito p a:hover{
+	color: #d89f3a;
+}
