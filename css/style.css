@@ -1,159 +1,151 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-body {
-    font-family:
-    'Roboto',
-    'Lucida Sans',
-    'Lucida Sans Regular',
-    Verdana,
-    sans-serif;
+article {
+  border: 1px solid gray;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-.topo {
-    background-color: black;
+body, i, p, ul {
+  font: inherit;
+  line-height: 5px;
+  list-style: none;
+  margin: 0;
 }
 
-#img-logo {
-    width: 300px;
-}
-
-#navegacao_topo {
-    display: flex;
-    justify-content: center;
-    color: white;
-    padding-bottom: 16px;
-}
-
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.item {
-    flex: 1;
-    margin: 5px;
-    text-align: center;
-}
-
-.img-botoes_topo {
-    width: 25px;
+header {
+  font-family:
+  'Roboto',
+  'Lucida Sans',
+  'Lucida Sans Regular',
+  Verdana,
+  sans-serif;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
+  display: flex;
 }
 
 nav ul li {
-    margin: 0 20px;
+  margin: 0 20px;
 }
 
 nav ul li a {
-    display: block;
-    position: relative;
-    text-decoration: none;
-    padding: 0px;
-    font-size: 15px;
-    text-transform: uppercase;
-    transition: 0.5s;
+  display: block;
+  font-size: 15px;
+  text-transform: uppercase;
+  transition: 0.5s;
 }
 
-#head-link {
-    text-decoration: none;
-    color: white;
+nav ul:hover li a {
+  filter: blur(1px);
+  opacity: .2;
+  transform: scale(1.2);
 }
 
-#head-link:hover {
-    color: #6315cb;
+nav ul li a:before {
+  background: #6315cb;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+  width: 100%;
+  z-index: -1;
 }
 
-#menu-link {
-    color: white;
-    padding: 5px;
+nav ul li a:hover {
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1.4);
 }
 
-ul:hover li a {
-    transform: scale(1.2);
-    opacity: .2;
-    filter: blur(1px);
-}
-
-ul li a:hover {
-    transform: scale(1.4);
-    opacity: 1;
-    filter: blur(0);
-}
-
-ul li a:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #6315cb;
-    transition: transform 0.5s;
-    transform-origin: right;
-    transform: scaleX(0);
-    z-index: -1;
-}
-
-ul li a:hover:before {
-    transition: transform 0.5s;
-    transform-origin: left;
-    transform: scaleX(1);
-}
-
-#img-lupa {
-    margin-top: 3px;
-    margin-left: 5px;
-    width: 60%;
-    height: 100%;
-}
-
-article {
-    margin-left: 150px;
-    margin-right: 150px;
-    border: 1px solid gray;
-}
-
-/* INPUT */
-
-#pequisa-box {
-    background-color: rgb(94, 94, 94);
-    height: 36px;
-    display: flex;
-    border-radius: 300px;
-}
-
-#botao-pesquisa_topo {
-    width: 10%;
-    background-color: transparent;
-    border-style: none;
-    outline: none;
-    cursor: pointer;
-}
-
-#botao-pesquisa_topo:hover {
-    border-radius: 300px;
-    background-color: rgb(44, 44, 44);
-}
-
-#barra-pesquisa_topo {
-    font-size: 14px;
-    width: 85%;
-    margin-left: 5%;
-    color: white;
-    background-color: transparent;
-    border-style: none;
-    outline: none;
+nav ul li a:hover:before {
+  transition: transform 0.5s;
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 .botoes_topo {
-    color: white;
-    font-size: 14px;
+  color: white;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+}
+
+.topo {
+  background-color: black;
+  height: 120px;
+}
+
+.img-botoes_topo {
+  width: 25px;
+}
+
+.item {
+  flex: 1;
+  margin: 5px;
+  text-align: center;
+}
+
+.navegacao_topo {
+  display: flex;
+  justify-content: center;
+}
+
+#barra-pesquisa_topo {
+  background-color: transparent;
+  border-style: none;
+  color: black;
+  font-size: 14px;
+  margin-left: 20px;
+  width: 85%;
+}
+
+#botao-pesquisa_topo {
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+  width: 45px;
+}
+
+#botao-pesquisa_topo:hover {
+  background:
+  linear-gradient(0deg, rgba(216,159,58,1) 0%, rgba(99,21,203,1) 100%);
+  background-color: #2C2C2C;
+  border-radius: 300px;
+}
+
+#head-link:hover {
+  color: #6315cb;
+}
+
+#img-logo {
+  width: 300px;
+}
+
+#img-lupa {
+  height: 20px;
+  margin-top: 3px;
+  margin-left: 5px;
+  width: 60%;
+}
+
+#menu-link {
+  color: white;
+  padding: 6px;
+}
+
+#pesquisa-box {
+  background-color: white;
+  border-radius: 300px;
+  display: flex;
+  height: 36px;
 }

@@ -1,0 +1,69 @@
+a {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.footer {
+  background: black;
+  bottom: 0px;
+  color: #fff;
+  font-family: arial;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 0px;
+  position: fixed;
+  text-align: right;
+  width: 100%;
+}
+
+.footer-credito {
+  padding-right: 10px;
+}
+
+.footer-rede-social {
+  text-align: center;
+  width: 100%;
+}
+
+.footer-rede-social li {
+  background: #fff;
+  display: inline-block;
+  margin: 0px 15px;
+  width: 50px;
+}
+
+.footer-rede-social a {
+  display: block;
+  line-height: 50px;
+}
+
+.footer-rede-social a:hover {
+  color: white;
+}
+
+#facebook:hover {
+  background:#3b5998;
+}
+
+#google:hover {
+  background: #cd462f;
+}
+
+#instagram:hover {
+  background: radial-gradient(
+  circle at 40% 110%,
+  #fdf497 0%,
+  #fdf497 5%,
+  #fd5949 45%,
+  #d6249f 60%,
+  #285AEB 90%);
+}
+
+#twitter:hover {
+  background:#26a7de;
+}
+
+#youtube:hover {
+  background: #e32d2d;
+}
