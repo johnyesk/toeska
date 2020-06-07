@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+form {
+    background-color: rgb(250, 242, 242);
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 50px;
+    max-width: bold;
+}
+
+form h2 {
+    font-family: 'Nunito';
+    font-size: 25px;
+    text-align: center;
+}
+
+form fieldset {
+    border: none;
+}
+
+form legend {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    margin-left: 24px;
+} 
+
+form input {
+    background-color: rgb(212, 209, 209);
+    border: 0;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 10px;
+}
+
+form label {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: 'Nunito';
+}
+
+form .field-group .field + .field {
+    margin-left: 24px;
+}
+
+#passwordA {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 200px;
+    font-family: 'Nunito';
+}
+
+button {
+    margin-left: 40px;
+    width: 160px;
+    height: 40px;
+    background-color:#6315cb;
+    border-radius: 10px 8px;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    transition: background-color 500ms;
+}
+
+form button:hover {
+    background-color: black;
+}
