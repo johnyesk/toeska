@@ -1,11 +1,37 @@
-.product-image
-{
+body {
+  font-family: arial;
+}
+
+.product {
+  border: solid 1px gray;
+  margin: 5px;
+  padding: 1px;
+  text-align: center;
+  width: 40%;
+}
+
+.product-bottom {
+  position: relative;
+}
+
+.product-image {
   width: 80%;
 }
 
-body
-{
-  font-family: arial;
+.product-text {
+  float: left;
+  line-height: normal;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: left;
+}
+
+.showcase {
+  margin-bottom: 95px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .showcase-button {
@@ -27,38 +53,12 @@ body
   cursor: pointer;
 }
 
-.showcase {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 95px;
-  width: 100%;
-}
-
-.showcase-row
-{
-  margin-left: 15%;
+.showcase-row {
   display: flex;
+  margin-left: 15%;
 }
 
-.product
-{
-  text-align: center;
-  width: 40%;
-  border: solid 1px gray;
-  margin: 5px;
-  padding: 1px;
-}
-
-.product-bottom
-{
-  position: relative;
-}
-
-.product-text {
-  float: left;
-  line-height: normal;
-  padding-left: 25px;
-  padding-right: 25px;
-  text-align: left;
+.title {
+  margin-left: 15%;
+  padding-top: 15px;
 }
