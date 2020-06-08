@@ -8,9 +8,30 @@ body
   font-family: arial;
 }
 
+.showcase-button {
+  background-color:#6315cb;
+  border: 0;
+  border-radius: 10px 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+  height: 40px;
+  margin-left: 40px;
+  margin-top: 8px;
+  transition: background-color 500ms;
+  width: 160px;
+}
+
+.showcase-button:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
 .showcase {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 95px;
   width: 100%;
 }
 
@@ -29,9 +50,15 @@ body
   padding: 1px;
 }
 
+.product-bottom
+{
+  position: relative;
+}
+
 .product-text {
-  text-align: left;
-  padding-left: 5%;
-  padding-right: 5%;
   float: left;
+  line-height: normal;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: left;
 }

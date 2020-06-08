@@ -1,73 +1,193 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <title>toeska - Vitrine</title>
-  <meta name="description" content="Vitrine da loja de sapatos 'toeska'">
-  <meta name="keywords" content="loja sapatos vitrine frontend pw norton">
-  <link rel="stylesheet" href="css/vitrine.css">
-</head>
-<body>
-  <div class="showcase">
-    <div class="showcase-row">
-      <div class="product">
-        <a href="detail/product_1">
-          <img
-            class="product-image"
-            src="images/showcase/showcase_item1.jpg"
-            alt="Nike Revolution 5 Preto & Branco Masculino"
-          >
-        </a><br />
-        <div class="product-text">
-          <h3>Tênis Nike Revolution 5 Preto & Branco Masculino</h3>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Toeska - Vitrine </title>
+    <meta name="description" content="Vitrine da loja de sapatos 'toeska'">
+    <meta name="keywords" content="loja sapatos vitrine frontend pw norton">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/vitrine.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="topo">
+      <div class="container">
+        <div class="item">
+          <a href="index.html">
+            <img
+              id="img-logo"
+              src="img/toeska-logo-light-horizontal.png"
+            >
+          </a>
         </div>
-        <div class="product-footer">
+        <div id="pesquisa-box" class="item">
+          <input
+            type="search"
+            name="barra-pesquisa_topo"
+            id="barra-pesquisa_topo"
+          />
+            <button id="botao-pesquisa_topo">
+              <img id="img-lupa" src="img/lupa-black.png"/>
+            </button>
+        </div>
+        <div class="item">
+          <a href="cadastro.html">
+            <img src="img/login.png" class="img-botoes_topo">
+            <span class="botoes_topo" id="botao-login_topo">
+              Login
+            </span>
+          </a>
+          <a href="cesta.html">
+            <img src="img/sacola.png" class="img-botoes_topo">
+            <span class="botoes_topo" id="botao-sacola_topo">
+              Sacola
+            </span>
+          </a>
+        </div>
+      </div>
+      <nav class="navegacao_topo">
+        <ul>
+          <li><a id="menu-link" href="#"> Feminino </a></li>
+          <li><a id="menu-link" href="#"> Masculino </a></li>
+          <li><a id="menu-link" href="#"> Acessórios </a></li>
+          <li><a id="menu-link" href="#"> Casual </a></li>
+          <li><a id="menu-link" href="#"> Sobre Nós </a></li>
+          <li><a id="menu-link" href="#"> Contato </a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="showcase">
+      <div class="showcase-row">
+        <div class="product">
+          <a href="detail/product_1">
+            <img
+              class="product-image"
+              src="img/showcase/showcase_item1.jpg"
+              alt="Nike Revolution 5 Preto & Branco Masculino"
+            >
+          </a><br />
           <div class="product-text">
-            <h2>R$ 229,99</h2>
+            <h3>Tênis Nike Revolution 5 Preto & Branco Masculino</h3>
           </div>
-          <div class="button">
-            <button>comprar</button>
+          <div class="product-bottom">
+            <div class="product-text">
+              <h2>R$ 229,99</h2>
+            </div>
+            <a href="detail/product_1">
+              <button class="showcase-button">
+                <div class="fa fa-shopping-cart"></div>
+                COMPRAR
+              </button>
+            </a>
           </div>
         </div>
+        <div class="product">
+          <a href="detail/product_2">
+            <img
+              class="product-image"
+              src="img/showcase/showcase_item2.jpg"
+              alt="Adidas Refine Adapt Running 5 Rosa Feminino"
+            >
+          </a><br />
+          <div class="product-text">
+            <h3>Tênis Adidas Refine Adapt Running 5 Rosa Feminino</h3>
+          </div>
+          <div class="product-bottom">
+            <div class="product-text">
+              <h2>R$ 139,99</h2>
+            </div>
+            <a href="detail/product_2">
+              <button class="showcase-button">
+                <div class="fa fa-shopping-cart"></div>
+                COMPRAR
+              </button>
+            </a>
+          </div>
+        </div><br />
       </div>
-      <div class="product">
-        <a href="detail/product_2">
-          <img
-            class="product-image"
-            src="images/showcase/showcase_item2.jpg"
-            alt="Adidas Refine Adapt Running 5 Rosa Feminino"
-          >
-        </a><br />
-        <div class="product-text">
-          <h3>Tênis Adidas Refine Adapt Running 5 Rosa Feminino</h3>
+      <div class="showcase-row">
+        <div class="product">
+          <a href="detail/product_3">
+            <img
+              class="product-image"
+              src="img/showcase/showcase_item3.jpg"
+              alt="Tênis Esportivo Adrun Fit 8407F Roxo e Rosa Feminino"
+            >
+          </a><br />
+          <div class="product-text">
+            <h3>Tênis Esportivo Adrun Fit 8407F Roxo e Rosa Feminino</h3>
+          </div>
+          <div class="product-bottom">
+            <div class="product-text">
+              <h2>R$ 109,99</h2>
+            </div>
+            <a href="detail/product_3">
+              <button class="showcase-button">
+                <div class="fa fa-shopping-cart"></div>
+                COMPRAR
+              </button>
+            </a>
+          </div>
         </div>
-      </div><br />
-    </div>
-    <div class="showcase-row">
-      <div class="product">
-        <a href="detail/product_1">
-          <img
-            class="product-image"
-            src="images/showcase/showcase_item1.jpg"
-            alt="Nike Revolution 5 Preto & Branco Masculino"
-          >
-        </a><br />
-        <div class="product-text">
-          <h3>Tênis Nike Revolution 5 Preto & Branco Masculino</h3>
-        </div>
+        <div class="product">
+          <a href="detail/product_4">
+            <img
+              class="product-image"
+              src="img/showcase/showcase_item4.jpg"
+              alt="Adidas Refine Adapt Running 5 Rosa Feminino"
+            >
+          </a><br />
+          <div class="product-text">
+            <h3>Tênis Olympikus Blend Bordô e Preto Masculino</h3>
+          </div>
+          <div class="product-bottom">
+            <div class="product-text">
+              <h2>R$ 79,99</h2>
+            </div>
+            <a href="detail/product_4">
+              <button class="showcase-button">
+                <div class="fa fa-shopping-cart"></div>
+                COMPRAR
+              </button>
+            </a>
+          </div>
+        </div><br />
       </div>
-      <div class="product">
-        <a href="detail/product_2">
-          <img
-            class="product-image"
-            src="images/showcase/showcase_item2.jpg"
-            alt="Adidas Refine Adapt Running 5 Rosa Feminino"
-          >
-        </a><br />
-        <div class="product-text">
-          <h3>Tênis Adidas Refine Adapt Running 5 Rosa Feminino</h3>
-        </div>
-      </div><br />
     </div>
-  </div>
-</body>
+    <footer class="footer">
+      <div class="fa footer-rede-social">
+        <ul>
+          <li>
+            <a id="facebook" href="https://www.facebook.com">
+              <i class="fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a id="twitter" href="https://www.twitter.com">
+              <i class="fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a id="google" href="https://www.gmail.com">
+              <i class="fa-google"></i>
+            </a>
+          </li>
+          <li>
+            <a id="instagram" href="https://www.instagram.com">
+              <i class="fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a id="youtube" href="https://www.youtube.com">
+              <i class="fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-credito">
+        <p> Design by: ®Toeska </p>
+      </div>
+    </footer>
+  </body>
 </html>
