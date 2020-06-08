@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    background-color: rgb(250, 242, 242);
+    margin-top: 10px;
+    padding: 50px;
+    border-radius: 50px;
+    max-width: bold;
+    width: 100%;
+}
+
+main fieldset {
+    border: none;
+}
+
+main legend {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section h2 {
+    font-family: 'Nunito';
+    font-size: 25px;
+    text-align: center;
+}
+
+main .produtos {
+    margin-bottom: 24px;
+    margin-left: 24px;
+}
+
+main .produtos-total {
+    margin-bottom: 24px;
+    margin-left: 24px;
+}
+
+table, th, td {
+    text-align: center;
+    border: 0;
+    padding: 10px;
+  }
+
+table {
+    font-family: 'Nunito';
+    font-size: 18px;
+    border-spacing: 5px;
+}
+
+button {
+    margin-left: 40px;
+    width: 160px;
+    height: 40px;
+    background-color:#6315cb;
+    border-radius: 10px 8px;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    transition: background-color 500ms;
+}
+
+section button:hover {
+    background-color: black;
+}
